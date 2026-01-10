@@ -1,4 +1,4 @@
-# PassDiali CLI
+# 🔐 PassDiali CLI
 
 Générateur de mots de passe sécurisé en ligne de commande pour PowerShell.
 
@@ -10,9 +10,9 @@ Générateur de mots de passe sécurisé en ligne de commande pour PowerShell.
 
 J'ai créé cet outil parce que j'en avais marre de chercher des générateurs de mots de passe en ligne. Avec PassDiali CLI, tout se passe localement sur votre machine - aucune donnée ne part sur internet.
 
-Version web disponible sur [passdiali.connectapps.org](https://passdiali.connectapps.org)
+🌐 Version web disponible sur [passdiali.connectapps.org](https://passdiali.connectapps.org)
 
-## Installation
+## 📥 Installation
 
 ### Installation rapide
 
@@ -28,7 +28,7 @@ cd PassDiali-CLI
 .\install.ps1
 ```
 
-## Utilisation
+## 🚀 Utilisation
 
 ### Commandes de base
 
@@ -85,25 +85,25 @@ PassDiali -Type Encryption -Format Base64 -KeySize 512
 PassDiali -Analyze "VotreMotDePasse123!"
 ```
 
-## Exemples
+## 💡 Exemples
 
-Générer un mot de passe pour un compte utilisateur :
+**Générer un mot de passe pour un compte utilisateur :**
 ```powershell
 PassDiali -Length 16 -ExcludeAmbiguous
 ```
 
-Phrase secrète facile à retenir :
+**Phrase secrète facile à retenir :**
 ```powershell
 PassDiali -Type Passphrase -Words 4 -Capitalize -Separator "-"
 # Résultat : Soleil-Montagne-Riviere-Foret
 ```
 
-Sauvegarder plusieurs mots de passe dans un fichier :
+**Sauvegarder plusieurs mots de passe dans un fichier :**
 ```powershell
 PassDiali -Length 20 -Count 10 | Out-File passwords.txt
 ```
 
-## Sécurité
+## 🔒 Sécurité
 
 Le script utilise `System.Security.Cryptography.RNGCryptoServiceProvider` pour générer des nombres aléatoires cryptographiquement sécurisés. Tout est généré localement, rien ne quitte votre machine.
 
@@ -111,27 +111,27 @@ Le script utilise `System.Security.Cryptography.RNGCryptoServiceProvider` pour g
 
 L'entropie mesure la force d'un mot de passe :
 
-- Moins de 28 bits : Très faible
-- 28-35 bits : Faible
-- 36-59 bits : Moyen
-- 60-127 bits : Fort
-- 128+ bits : Très fort
+- **Moins de 28 bits** : Très faible
+- **28-35 bits** : Faible
+- **36-59 bits** : Moyen
+- **60-127 bits** : Fort
+- **128+ bits** : Très fort
 
-## Contribution
+## 🤝 Contribution
 
 Les contributions sont bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
 
-## Licence
+## 📄 Licence
 
 MIT License - voir le fichier [LICENSE](LICENSE)
 
-## Auteur
+## 👤 Auteur
 
-Naoufal Najim
-- Email: naoufal.najim19@gmail.com
-- LinkedIn: [Naoufal Najim](https://www.linkedin.com/in/naoufalnajim01/)
-- Twitter: [@naoufalnajim01](https://x.com/naoufalnajim01)
+**Naoufal Najim**
+- 📧 Email: naoufal.najim19@gmail.com
+- 💼 LinkedIn: [Naoufal Najim](https://www.linkedin.com/in/naoufalnajim01/)
+- 🐦 Twitter: [@naoufalnajim01](https://x.com/naoufalnajim01)
 
 ---
 
-Fait au Maroc avec PowerShell
+Fait au Maroc 🇲🇦 avec PowerShell
